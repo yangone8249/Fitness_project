@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+body{
+font-family: 'Noto Sans KR', sans-serif;
+}
+
+#firstContent{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#listContent{    
+	width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    background: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#listContent>.searchDiv{
+    width: 500px;
+    background: aquamarine;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+}
+#listContent>.boardDiv{
+	width: 500px;
+    background: aquamarine;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+}	
+#listContent>.btnDiv{
+	width: 500px;
+    background: aquamarine;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 42%;
+}	
+#listContent>.pageDiv{
+	width: 500px;
+    background: aquamarine;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 42%;
+}	
+#tableList{
+	margin: auto;
+	border-collapse : collapse;
+	width: 300px;
+}
+#titleTable{
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+#table{
+	position: relative;
+}

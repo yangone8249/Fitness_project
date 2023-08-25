@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	<mapper namespace="com.myweb.www.repository.UserDAO">
+		<update id="updateMailKey">
+	    	update user set mail_key=#{mail_key} where email=#{email}
+		</update>
+		<update id="updateMailAuth">
+		    update user set mail_auth=1 where email=#{email} and mail_key=#{mail_key}
+		</update>
+		<select id="emailAuthFail" parameterType="String" resultType="int">
+		    select count(*) from member where id=#{id} and mail_auth=1
+		</select>	
+	</mapper>    
